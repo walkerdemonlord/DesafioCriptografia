@@ -1,0 +1,73 @@
+* {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+/* Campo Total */
+
+.campo-total {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 30px;
+}
+
+/* Campos dos Textos */
+
+.titulos {
+    margin-bottom: 0px;
+    margin-left: 5px;
+    opacity: 50%;
+}
+
+.campo-dos-textos {
+    display: flex;
+    flex-direction: column;
+}
+
+textarea.campo1, textarea.campo2 {
+    width: 600px;
+    height: 250px;
+    margin: 0;
+    padding: 5px;
+    box-sizing: border-box;
+    line-height: normal;
+    vertical-align: top;
+    text-align: left;
+    resize: none;
+    overflow-y: auto;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px grey;
+}
+
+
+/* Todos os Botões */
+
+.campo-dos-botoes {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+
+}
+
+.div-posicao-um {
+    margin-top: 30px;
+    margin-bottom: 150px;
+}
+
+.div-posicao-dois {
+    margin-top: 60px;
+    align-items: center;
+}
+
+.btn-um, .btn-dois {
+    border-radius: 30px;
+    border-style: none;
+    font-size: 20px;
+    padding: 20px;
+    background-color: #0A3871;
+    color: antiquewhite;
+}
