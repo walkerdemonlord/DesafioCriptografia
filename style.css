@@ -48,8 +48,8 @@ header img {
 textarea.campo1, textarea.campo2 {
     width: 600px;
     height: 250px;
-    margin: 0;
-    padding: 5px;
+    margin: 5px;
+    padding: 15px;
     box-sizing: border-box;
     line-height: normal;
     vertical-align: top;
@@ -58,6 +58,7 @@ textarea.campo1, textarea.campo2 {
     overflow-y: auto;
     border-radius: 10px;
     box-shadow: 5px 5px 5px grey;
+    color: #0A3871;
 }
 
 
