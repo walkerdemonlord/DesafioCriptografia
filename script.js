@@ -1,6 +1,7 @@
 // Selecionar os campos de entrada
 let campo1 = document.querySelector(".campo1");
 let campo2 = document.querySelector(".campo2");
+const chaveCripto = 5;
 
 // Função para criptografar o texto
 function criptografar() {
@@ -8,7 +9,7 @@ function criptografar() {
     let divididoCampo1 = texto.split('');
     let criptografado = divididoCampo1.map(char => {
         let codigoChar = char.charCodeAt(0);
-        let codigoCriptografado = codigoChar + 2; // Adicionar 2 ao código do caractere
+        let codigoCriptografado = codigoChar + chaveCripto; // Adicionar const caracteres
         return String.fromCharCode(codigoCriptografado); // Converter de volta para caractere
     }).join(''); // Juntar os caracteres em uma string
 
@@ -23,7 +24,7 @@ function descriptografar() {
     let divididoCampo2 = texto.split('');
     let descriptografado = divididoCampo2.map(char => {
         let codigoChar = char.charCodeAt(0);
-        let codigoDescriptografado = codigoChar - 2; // Subtrair 2 do código do caractere
+        let codigoDescriptografado = codigoChar - chaveCripto; // Subtrair const caracteres
         return String.fromCharCode(codigoDescriptografado); // Converter de volta para caractere
     }).join(''); // Juntar os caracteres em uma string
 
