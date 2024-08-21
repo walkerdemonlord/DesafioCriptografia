@@ -3,6 +3,10 @@ let campo1 = document.querySelector(".campo1");
 let campo2 = document.querySelector(".campo2");
 const chaveCripto = 5;
 
+//Carrossel
+const items = document.querySelectorAll('.carousel-item');
+let currentItem = 0;
+
 // Função para criptografar o texto
 function criptografar() {
     let texto = campo1.value;
@@ -48,3 +52,17 @@ function copiar() {
     }
     campo2.value = "";
 }
+
+//Carrossel
+
+document.getElementById('nextBtn').addEventListener('click', () => {
+    items[currentItem].classList.remove('active');
+    currentItem = (currentItem + 1) % items.length;
+    items[currentItem].classList.add('active');
+});
+
+document.getElementById('prevBtn').addEventListener('click', () => {
+    items[currentItem].classList.remove('active');
+    currentItem = (currentItem - 1 + items.length) % items.length;
+    items[currentItem].classList.add('active');
+});

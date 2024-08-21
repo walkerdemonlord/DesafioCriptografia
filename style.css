@@ -19,7 +19,7 @@ header img {
 }
 
 .imagem-persona {
-    margin-right: 50px;
+    margin-right: 40px;
 }
 
 /* Campo Total */
@@ -100,8 +100,8 @@ textarea.campo1, textarea.campo2 {
 
 .btn-tres {
     width: 100px;
-    height: 30px;
-    border-radius: 30px;
+    height: 40px;
+    border-radius: 5px;
     border-style: none;
     background-color: #0A3871;
     color: antiquewhite;
@@ -109,7 +109,14 @@ textarea.campo1, textarea.campo2 {
     margin-left: 260px;
     align-items: center;
     justify-content: center;
-    cursor: pointer;
+    cursor: pointer;   
+}
+
+/* Hover Effects */
+.btn-um:hover, 
+.btn-dois:hover, 
+.btn-tres:hover {
+    background-color: #1E3A8A; /* Um tom mais claro de azul que o original */
 }
 
 .imagem-icones {
@@ -117,4 +124,66 @@ textarea.campo1, textarea.campo2 {
     height: 40px;
     background-color: #0A3871;
     cursor: pointer;
+}
+
+/* Carrossel */
+
+.carousel-container {
+    width: 550px;
+    max-width: 600px;
+    height: 560px; /* Ajuste a altura para ser fixa */
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 1.2em;
+    color:#0A3871;
+    box-sizing: border-box;
+}
+
+.carousel-item {
+    display: none;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    font-size: 16px;
+    height: 400px; /* Adicione uma altura fixa para cada item */
+}
+
+.carousel-item.active {
+    display: block;
+}
+
+.carousel-buttons {
+    position: absolute;
+    bottom: 20px; /* Posiciona os botões na parte inferior do contêiner */
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px; /* Espaçamento entre os botões */
+}
+
+#prevBtn:hover, #nextBtn:hover {
+    background-color: #18378b;
+}
+
+.carousel-buttons button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #0A3871;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.titulo-texto-carrossel {
+    text-align: center;
+}
+
+.texto-carrossel {
+    text-align: justify;
+    font-weight: 400;
 }
