@@ -7,7 +7,7 @@
 
 header {
     position: absolute;
-    top: 50px;
+    top: 40px;
     left: 0;
 }
 
@@ -15,7 +15,7 @@ header img {
     display: block;
     margin: 0;
     width: 120px;
-    height: 48px;
+    height: 44px;
 }
 
 .imagem-persona {
@@ -65,11 +65,10 @@ textarea.campo1, textarea.campo2 {
 /* Todos os Botões */
 
 .campo-dos-botoes {
+    margin-top: 230px;
+    height: 100%;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    gap: 30px;
-
 }
 
 .div-posicao-um {
@@ -82,11 +81,40 @@ textarea.campo1, textarea.campo2 {
     align-items: center;
 }
 
-.btn-um, .btn-dois {
+.btn-um {
     border-radius: 30px;
     border-style: none;
-    font-size: 20px;
     padding: 20px;
     background-color: #0A3871;
     color: antiquewhite;
+    margin-bottom: 15px;
+}
+
+.btn-dois {
+    border-radius: 30px;
+    border-style: none;
+    padding: 20px;
+    background-color: #0A3871;
+    color: antiquewhite;
+}
+
+.btn-tres {
+    width: 100px;
+    height: 30px;
+    border-radius: 30px;
+    border-style: none;
+    background-color: #0A3871;
+    color: antiquewhite;
+    margin: 10px;
+    margin-left: 260px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.imagem-icones {
+    width: 40px;
+    height: 40px;
+    background-color: #0A3871;
+    cursor: pointer;
 }
